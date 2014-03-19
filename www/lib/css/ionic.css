@@ -3638,7 +3638,7 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
 
 .item-body {
   overflow: auto;
-  padding: 5px;
+  padding: 0px;
   text-overflow: inherit;
   white-space: normal; }
   .item-body h1, .item-body h2, .item-body h3, .item-body h4, .item-body h5, .item-body h6, .item-body p {
@@ -3774,7 +3774,8 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
   position: relative;
   padding-top: 1px;
   padding-bottom: 1px;
-  padding-left: 0;
+  left: 0px;
+  padding-right: auto;
   margin-bottom: 20px; }
 
 /* If a list is the last item in a container, don't add margin-bottom */
@@ -3791,7 +3792,7 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
   transform: translate3d(50px, 0, 0); }
 
 .list-reordering .item-content {
-  margin-right: 50px; }
+  margin: auto; }
 .list-reordering .item-drag {
   z-index: 1; }
 
@@ -3817,9 +3818,9 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
  */
 .card, .list-inset {
   overflow: hidden;
-  margin: 20px 10px;
+  margin: auto;
   border-radius: 2px;
-  background-color: ; }
+  background-color: transparent; }
 
 .card {
   padding-top: 1px;

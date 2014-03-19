@@ -32,22 +32,67 @@ html {
   background-size: cover;
 }*/
 
+
+
+
+/*border-image-source: url("../images/shadowEvents.png");*/
 #wholeEventsPage{
-	background-color: gray;
+/*	background-color: DimGray;*/
+
+	/*border: 25px solid;*/
+	/*border-color: black;*/
+	/*border-image-width: 20px;*/
+	/*border-image-outset: 14px;*/
+/*	border-image-repeat: round;*/
+		/*margin: 40px;*/
+	/*	padding: 40px;*/
+	/* background-size: cover;*/
+/*	padding-right: 30px;*/
+/*	float: left;*/
+	/*z-index: 15;*/
+		background-image: url("../images/transBackground.png");
+		z-index: .1;
+		background-size: cover;
+		top:0px;
+
+		height: 76%;
+/*	width: 80%;*/
+		margin: 0px;
+
 }
+
 /*	overflow: hidden;
 /*	max-height: 600px;
 	height: 600px;*/
 	/*padding:40px;*/
 /**/
+/*
+#shadow{
+		background-image: url("../images/shadowEvents.png");
+		z-index: 2;
+		background-size: cover;
+		margin-top: 0px;
+		padding-top: 0px;
+		border-top: 0px;
+		top:0px;
+		left: 0px:;
+		right:0px;
+		opacity: .8;
+}*/
+/*#wholeEventsPage .green-box{
+		background-image: url("../images/transBackground.png");
+		z-index: 1;
+		background-size: cover;
+		border-radius: 5%;
+}*/
 
-#eventBack img{
-/*	background-image: url("../images/transBackground.png");
+/*#eventBack img{
+	background-image: url("../images/transBackground.png");
 	background-position: center;
-	background-repeat:no-repeat;*/
+	background-repeat:no-repeat;
 	z-index: .5;
 	margin: auto;
-}
+}*/
 
 /*#wholeEventsPage{*/
 /*	background-image: url("../images/outsideMesh.png");
@@ -67,18 +112,30 @@ html {
 /*#eventListItem h3{
 	text-align: center;
 }*/
+/*
+<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-prn2/t31.0-8/1049209_215389658608791_602266005_o.png" height="72%" width="93%">*/
 
 
-.unLogo{
+#unLogo{
 	 position:fixed;
-	 top:12%;
-	 z-index: 10;
-	 /*max-width:300px;
-	 max-height: 300px;*/
-	 margin: auto;
-	 /*padding: auto;*/
-	 padding-left: 11%;
-	 	padding-right: 2.5%;
+	 background-image: url("../images/UNLogoApp.png");
+	 background-repeat: no-repeat;
+	 background-size: 83% 65%;
+	 background-position: center;
+	 height: 50%;
+	 width: 100%;
+	 /*width: 100%;*/
+	 /*height:  50%;*/
+	 top: 8%;
+	 padding-top: 4%;
+	 z-index: 20;
+	 max-width:100%;
+	 max-height: 40%;
+	 margin: 0px;
+	 text-align: center;
+
+	/* padding-left: 11%;
+	 	padding-right: 2.5%;*/
 }
 
 /*.centerContainer{
@@ -91,20 +148,54 @@ html {
 }*/
 
 #eventWrapper{
-	margin: auto;
+	/*margin-right: 0px;*/
 /*	margin-left: 0px;
 	margin-right: 0px;
 	/*	margin-top:57px;*/
-	padding:auto;
+/*	padding-right: 0px;*/
 	border: none;
+	top:25px;
 	opacity: .5;
+	text-align: center;
+	border-radius: 10%;
+	margin: 10px;
+	background-image: url("../images/transBackground.png");
+	background-size: auto;
+	background-position: center;
+	z-index: 5;
+	position: relative;
+}
+
+#eventWrapper hr{
+
+/*	bottom: 10px;*/
+	margin-bottom: 32px;
+	border-color: black;
+
+}
+
+#eventWrapper h3{
+	color:white;
+	font-style: italic;
+}
+
+#eventWrapper p{
+	font-size: 14px;
+}
+
+#eventWrapper button{
+	color: white;
 }
 
 #eventList{
 	margin: auto;
-	height: 425px;
-	width: 90%;
-	padding-top: 50%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	height: 430px;
+	width: 100%;
+	text-align: center;
+	padding-top: 45%;
 	overflow: auto;
 	overflow-scrolling: auto;
 	-webkit-overflow-scrolling: touch;
@@ -119,7 +210,19 @@ html {
 	padding: auto;
 	border:1px solid black;
 	text-align: center;
-	z-index: 2;
+	z-index: 0;
+}
+
+.item-content{
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 90%;
+
+}
+
+.ng-binding{
+	vertical-align: center;
 }
 
 /*#eventListingInfo {
@@ -154,21 +257,65 @@ html {
 
 .fade-bar {
   height: 20px;
-  width: 100%;
+  width: 10%;
   position: fixed;
-  z-index: 9999;
+  z-index: .5;
   opacity: 0;
   background-color: #000;
 }
 
-.unMenu{
+#unMenu{
 	float: left;
-	padding-left: 3.2%;
-	padding-top: 6.4%;
-	color: white;
+	z-index: 0;
+	height:0;
+	width:5%;
+	padding-left: 7%;
+	padding-top: 5.5%;
+	max-width: 8%;
+	color: transparent;
+}
+
+.full-image {
+	position: relative;
+	margin-top: 5%;
+	max-width: 63%;
+	border-radius: 55%;
+	/*border-top: 0px;*/
+	/*border-image: url("../images/transimg.gif");*/
+/*	border: 0px;*/
+	border-style: inset;
+
+/*	border-top-width: 10px;*/
+	border-width: 10px;
+		border-color: DimGray;
+}
+
+.item{
+	width: 100%;
+	height: 100%;
+	padding-right: 0px;
+	margin-right: 0px;
+	border: none;
+	background-image: url("../images/transimg.gif");
+	background-position: center;
+	background-repeat: repeat;
+
+}
+
+.item-complex{
+	padding-right: 0px;
+	margin-right: 0px;
 }
 
 #helpBtn{
+	float: left;
+	padding-left: 3.2%;
+	padding-top: 7.4%;
+	color: blue;
+
+}
+
+#eventBtn{
 	float: left;
 	padding-left: 3.2%;
 	padding-top: 7.4%;

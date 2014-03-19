@@ -29,7 +29,7 @@
   <!--
     'starter' is the name of this angular module (js/app.js)
   -->
-  <body ng-app="starter" animation="slide-left-right-ios7">
+  <body ng-app="starter" animation="fade-in">
 
     <!--
       The nav bar that will be updated as we navigate between views
@@ -69,8 +69,13 @@
 
 			<h1 class="title">Nightlife Info</h1>
 			<div>
- 				<button id="helpBtn" class="button button-icon" ng-click="go('#/tab/adopt')">
- 					<i class="icon ion-android-hand"></i>
+				<br></br><br>
+				<button id="helpBtn" class="button button-icon" ng-click="go('#/tab/adopt')">
+ 					<i class="icon ion-android-hand"></i>Need Help?
+ 				</button>
+ 				<p></p><hr size=1 width="100%">
+ 				<button id="eventBtn" class="button button-icon" ng-click="go('#/tab/events')">
+ 					<i class="icon ion-android-storage"></i>Your Events
  				</button>
  			</div>
 

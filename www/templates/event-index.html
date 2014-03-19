@@ -9,14 +9,15 @@
 <ion-view>
 
   <ion-content scroll="false" has-header="false" has-tabs="false">
-  	<div class="unMenu">
-      <button class="button button-icon" ng-click="open_menu()"><i class="icon ion-loading-d"></i></button>
-     </div>
 
+<!-- <div id='shadow'> -->
   <div id='wholeEventsPage'>
-  	<div class="unLogo">
-  		<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-prn2/t31.0-8/1049209_215389658608791_602266005_o.png" height="72%" width="93%">
-  	</div>
+
+  		<div id="unMenu">
+      <button class="button button-clear button-icon icon ion-loading-d" ng-click="open_menu()"></button>
+     </div>
+     	<div id="unLogo">
+  		</div>
 	 <!--  <div id='eventBack'> -->
 	<!--    <img src="../images/transBackground.png" height="72%" width="93%"> -->
 
@@ -24,21 +25,24 @@
 
 	    	<scroll style="height:500px">
 
-	 				<ion-item href="#/tab/event/{{event.id}}" ng-repeat="event in events" type="item-text-wrap" id='eventWrapper'>
 
-						 	<div class="item item-body">
+	 				<div ng-repeat="event in events" id='eventWrapper'>
+
+						 	<!-- <div ng-click="go('#/tab/event/{{event.id}}'')"> -->
 						    <img class="full-image" src="{{event.cover}}">
 				 				<h3>{{event.name}}</h3>
-				        <p>{{event.location}}</p>
-				        <p>{{event.start_time}}</p>
-				      </div>
+				        <p href="#/tab/event/{{event.id}}">{{event.location}}</p>
+				        <p href="#/tab/event/{{event.id}}">{{event.start_time}}</p>
+				        <button class="button button-clear button-icon icon ion-android-note" href="#/tab/event/{{event.id}}"></button>
+				        <br href="#/tab/event/{{event.id}}">
+				        <hr size=1 width="93%">
+			<!-- 	      </div> -->
 
-	      	</ion-item>
+	      	</div>
 	      </scroll>
 	    </ion-list>
 	  </div>
 	 <!-- </div> -->
-
   </ion-content>
 </ion-view>
 
