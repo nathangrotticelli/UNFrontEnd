@@ -1,0 +1,45 @@
+<!--
+  This template gets placed in the Pet tab's directive.
+  It was wired up in the app config (app.js)
+  The 'pets' data comes from its $scope within PetIndexCtrl (controller.js)
+-->
+
+<!-- title="{{myTitle}}" -->
+<!-- <ion-view  title='Event Info'> -->
+<ion-view>
+
+  <ion-content scroll="false" has-header="false" has-tabs="false">
+  	<div class="unMenu">
+      <button class="button button-icon" ng-click="open_menu()"><i class="icon ion-loading-d"></i></button>
+     </div>
+
+  <div id='wholeEventsPage'>
+  	<div class="unLogo">
+  		<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-prn2/t31.0-8/1049209_215389658608791_602266005_o.png" height="72%" width="93%">
+  	</div>
+	 <!--  <div id='eventBack'> -->
+	<!--    <img src="../images/transBackground.png" height="72%" width="93%"> -->
+
+	    <ion-list id='eventList'>
+
+	    	<scroll style="height:500px">
+
+	 				<ion-item href="#/tab/event/{{event.id}}" ng-repeat="event in events" type="item-text-wrap" id='eventWrapper'>
+
+						 	<div class="item item-body">
+						    <img class="full-image" src="{{event.cover}}">
+				 				<h3>{{event.name}}</h3>
+				        <p>{{event.location}}</p>
+				        <p>{{event.start_time}}</p>
+				      </div>
+
+	      	</ion-item>
+	      </scroll>
+	    </ion-list>
+	  </div>
+	 <!-- </div> -->
+
+  </ion-content>
+</ion-view>
+
+
