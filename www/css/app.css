@@ -37,97 +37,41 @@ html {
 
 /*border-image-source: url("../images/shadowEvents.png");*/
 #wholeEventsPage{
-/*	background-color: DimGray;*/
-
-	/*border: 25px solid;*/
-	/*border-color: black;*/
-	/*border-image-width: 20px;*/
-	/*border-image-outset: 14px;*/
-/*	border-image-repeat: round;*/
-		/*margin: 40px;*/
-	/*	padding: 40px;*/
-	/* background-size: cover;*/
-/*	padding-right: 30px;*/
-/*	float: left;*/
-	/*z-index: 15;*/
+	/*margin-top: 3px;*/
+	padding-top:7.68px;
+	background-color: Gray;
+	top:0px;
 		background-image: url("../images/transBackground.png");
 		z-index: .1;
 		background-size: cover;
-		top:0px;
+		background-position: auto auto;
+		/*top: 20px;*/
+	/*	border-style: solid;
+		border-top: thick double transparent;*/
 
-		height: 76%;
+		height: 100%;
 /*	width: 80%;*/
-		margin: 0px;
 
+/*		bottom-border: 0px;
+*/
 }
 
-/*	overflow: hidden;
-/*	max-height: 600px;
-	height: 600px;*/
-	/*padding:40px;*/
-/**/
-/*
-#shadow{
-		background-image: url("../images/shadowEvents.png");
-		z-index: 2;
-		background-size: cover;
-		margin-top: 0px;
-		padding-top: 0px;
-		border-top: 0px;
-		top:0px;
-		left: 0px:;
-		right:0px;
-		opacity: .8;
+/*.view{
+	margin-bottom: 6px;
 }*/
-/*#wholeEventsPage .green-box{
-		background-image: url("../images/transBackground.png");
-		z-index: 1;
-		background-size: cover;
-		border-radius: 5%;
-}*/
-
-/*#eventBack img{
-	background-image: url("../images/transBackground.png");
-	background-position: center;
-	background-repeat:no-repeat;
-	z-index: .5;
-	margin: auto;
-}*/
-
-/*#wholeEventsPage{*/
-/*	background-image: url("../images/outsideMesh.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	padding: 5%;
-	border-style: outset;
-	border-width: thick;
-	background-color: black;
-	height: 700px;
-	width:500px;
-	position: relative;*/
-/*}*/
-
-/*#eventListItem h3{
-	text-align: center;
-}*/
-/*
-<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-prn2/t31.0-8/1049209_215389658608791_602266005_o.png" height="72%" width="93%">*/
-
 
 #unLogo{
 	 position:fixed;
 	 background-image: url("../images/UNLogoApp.png");
 	 background-repeat: no-repeat;
-	 background-size: 83% 65%;
+	 background-size: 83% 45%;
 	 background-position: center;
 	 height: 50%;
 	 width: 100%;
 	 /*width: 100%;*/
 	 /*height:  50%;*/
-	 top: 8%;
-	 padding-top: 4%;
+	 top: 3.2%;
+	/* padding-top: 4%;*/
 	 z-index: 20;
 	 max-width:100%;
 	 max-height: 40%;
@@ -138,14 +82,7 @@ html {
 	 	padding-right: 2.5%;*/
 }
 
-/*.centerContainer{
-	background-image: url("../images/transBackground.png");
-	background-position: contain;
-	background-repeat:no-repeat;
-	background-color: red;
-	background-size: 130%;
-/*	background-size: 110%;
-}*/
+
 
 #eventWrapper{
 	/*margin-right: 0px;*/
@@ -155,9 +92,10 @@ html {
 /*	padding-right: 0px;*/
 	border: none;
 	top:25px;
-	opacity: .5;
+	opacity: .8;
 	text-align: center;
 	border-radius: 10%;
+	border-style: inset;
 	margin: 10px;
 	background-image: url("../images/transBackground.png");
 	background-size: auto;
@@ -166,10 +104,12 @@ html {
 	position: relative;
 }
 
+
+
 #eventWrapper hr{
 
 /*	bottom: 10px;*/
-	margin-bottom: 32px;
+	margin-bottom: 15px;
 	border-color: black;
 
 }
@@ -181,6 +121,7 @@ html {
 
 #eventWrapper p{
 	font-size: 14px;
+	color: silver;
 }
 
 #eventWrapper button{
@@ -191,11 +132,12 @@ html {
 	margin: auto;
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-bottom: 20px;
-	height: 430px;
+	padding-bottom: 10px;
+/*	padding-top: 15px;*/
+	height: 480px;
 	width: 100%;
 	text-align: center;
-	padding-top: 45%;
+	padding-top: 40%;
 	overflow: auto;
 	overflow-scrolling: auto;
 	-webkit-overflow-scrolling: touch;
@@ -221,9 +163,9 @@ html {
 
 }
 
-.ng-binding{
+/*.ng-binding{
 	vertical-align: center;
-}
+}*/
 
 /*#eventListingInfo {
 	opacity:.9 !important;
@@ -259,18 +201,18 @@ html {
   height: 20px;
   width: 10%;
   position: fixed;
-  z-index: .5;
+  z-index: 999;
   opacity: 0;
   background-color: #000;
 }
 
 #unMenu{
 	float: left;
-	z-index: 0;
+	z-index: 999;
 	height:0;
 	width:5%;
 	padding-left: 7%;
-	padding-top: 5.5%;
+	padding-top: 4.5%;
 	max-width: 8%;
 	color: transparent;
 }
@@ -287,7 +229,7 @@ html {
 
 /*	border-top-width: 10px;*/
 	border-width: 10px;
-		border-color: DimGray;
+		border-color: silver;
 }
 
 .item{
@@ -323,5 +265,13 @@ html {
 
 }
 
+.ion-android-note{
+	vertical-align: center;
+}
+
+button{
+	margin-top: -2.2px;
+	z-index: 999;
+}
 
 /*<link href="css/ionicons.css" rel="stylesheet" type="text/css" media="screen" />*/

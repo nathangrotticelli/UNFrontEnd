@@ -1,4 +1,4 @@
-item-text-wrap/*!
+/*!
  * Copyright 2014 Drifty Co.
  * http://drifty.com/
  *
@@ -3247,17 +3247,17 @@ a.subdued {
  * --------------------------------------------------
  */
 .item {
-  color: black;
-  background-color: orange;
-  border-color: blue;
+  color: #444;
+  background-color: #fff;
+  border-color: #ddd;
   -webkit-transition: margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, left 0.2s ease-in-out;
   -moz-transition: margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, left 0.2s ease-in-out;
   transition: margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, left 0.2s ease-in-out;
   position: relative;
   z-index: 2;
   display: block;
-  margin: 5px;
-  padding: 5px;
+  margin: -1px;
+  padding: 15px;
   border-width: 1px;
   border-style: solid;
   font-size: 16px; }
@@ -3274,7 +3274,7 @@ a.subdued {
     margin: 0 0 3px 0;
     font-size: 10px; }
   .item p {
-    color: black;
+    color: #666;
     font-size: 14px; }
   .item h1:last-child, .item h2:last-child, .item h3:last-child, .item h4:last-child, .item h5:last-child, .item h6:last-child, .item p:last-child {
     margin-bottom: 0; }
@@ -3405,13 +3405,11 @@ a.item-content {
 
 .item-text-wrap .item, .item-text-wrap, .item-text-wrap h1, .item-text-wrap h2, .item-text-wrap h3, .item-text-wrap h4, .item-text-wrap h5, .item-text-wrap h6, .item-text-wrap p, .item-complex.item-text-wrap .item-content, .item-body h1, .item-body h2, .item-body h3, .item-body h4, .item-body h5, .item-body h6, .item-body p {
   overflow: hidden;
-  white-space: normal;
-   }
+  white-space: normal; }
 
 .item-complex.item-text-wrap, .item-complex.item-text-wrap h1, .item-complex.item-text-wrap h2, .item-complex.item-text-wrap h3, .item-complex.item-text-wrap h4, .item-complex.item-text-wrap h5, .item-complex.item-text-wrap h6, .item-complex.item-text-wrap p {
   overflow: hidden;
-  white-space: nowrap;
-	}
+  white-space: nowrap; }
 
 /**
  * Item Icons
@@ -3552,7 +3550,7 @@ a.item, button.item, .item a[href].item-content, .item[ng-click] a.item-content 
 
 a.item:after, button.item:after, .item a[href].item-content:after, .item[ng-click] a.item-content:after {
   /* By default, both <a> and <button> have right side arrow icons */
-  /*display: -webkit-box;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -moz-flex;
@@ -3578,7 +3576,7 @@ a.item:after, button.item:after, .item a[href].item-content:after, .item[ng-clic
   font-size: 16px;
   font-family: 'Ionicons';
   line-height: 1;
-  speak: none;*/ }
+  speak: none; }
 
 .grade-b a.item:after, .grade-b button.item:after, .grade-b .item a[href].item-content:after, .grade-b .item[ng-click] a.item-content:after, .grade-c a.item:after, .grade-c button.item:after, .grade-c .item a[href].item-content:after, .grade-c .item[ng-click] a.item-content:after {
   -webkit-font-smoothing: none;
@@ -3630,7 +3628,7 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
   padding-right: 0; }
 
 .item-image {
-  padding: 10px;
+  padding: 0;
   text-align: center; }
   .item-image img:first-child, .item-image .list-img {
     width: 100%;
@@ -3638,12 +3636,12 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
 
 .item-body {
   overflow: auto;
-  padding: 0px;
+  padding: 15px;
   text-overflow: inherit;
   white-space: normal; }
   .item-body h1, .item-body h2, .item-body h3, .item-body h4, .item-body h5, .item-body h6, .item-body p {
-    margin-top: 0px;
-    margin-bottom: 0px; }
+    margin-top: 15px;
+    margin-bottom: 15px; }
 
 .item-divider {
   padding-top: 7.5px;
@@ -3774,8 +3772,7 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
   position: relative;
   padding-top: 1px;
   padding-bottom: 1px;
-  left: 0px;
-  padding-right: auto;
+  padding-left: 0;
   margin-bottom: 20px; }
 
 /* If a list is the last item in a container, don't add margin-bottom */
@@ -3792,7 +3789,7 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
   transform: translate3d(50px, 0, 0); }
 
 .list-reordering .item-content {
-  margin: auto; }
+  margin-right: 50px; }
 .list-reordering .item-drag {
   z-index: 1; }
 
@@ -3818,9 +3815,9 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
  */
 .card, .list-inset {
   overflow: hidden;
-  margin: auto;
+  margin: 20px 10px;
   border-radius: 2px;
-  background-color: transparent; }
+  background-color: #fff; }
 
 .card {
   padding-top: 1px;
