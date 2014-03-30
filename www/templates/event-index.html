@@ -10,26 +10,56 @@
 
   <ion-content scroll="false" has-header="false" has-tabs="false">
 
-<!-- <div id='shadow'> -->
-  <div id='wholeEventsPage'>
 
-  	 <div id="unMenu">
+<!-- <div id='shadow'> -->
+  <div id='wholeEventsPage' >
+
+      <button id="unMenu2" class="button button-clear button-icon icon ion-navicon" ng-click="open_menu()"></button>
+
+
+  	<!--  <div id="unMenu">
       <button class="button button-clear button-icon icon ion-loading-d" ng-click="open_menu()"></button>
-     </div>
+     </div> -->
+
+  <!--     // window.fbAsyncInit = function() {
+      //   FB.init({
+      //     appId      : '1474435556106076',
+      //     status     : true,
+      //     xfbml      : true
+      //   });
+      // };
+
+      // (function(d, s, id){
+      //    var js, fjs = d.getElementsByTagName(s)[0];
+      //    if (d.getElementById(id)) {return;}
+      //    js = d.createElement(s); js.id = id;
+      //    js.src = "//connect.facebook.net/en_US/all.js";
+      //    fjs.parentNode.insertBefore(js, fjs);
+      //  }(document, 'script', 'facebook-jssdk')); -->
+
      	<div id="unLogo">
+
   		</div>
+  	<!-- 	<i id='#unMenu'class="icon ion-beer"></i>
+  	</div> -->
 	 <!--  <div id='eventBack'> -->
 	<!--    <img src="../images/transBackground.png" height="72%" width="93%"> -->
 
-	    <ion-list id='eventList'>
 
+
+
+
+
+	    <ion-list id='eventList'>
+	  <!--   <button class="button" ng-click="fbLogin()" id="fb-connect">Connect to facebook</button>
+            <p>{{userName}}</p> -->
 	    	<scroll style="height:500px">
 
 
 	 				<div ng-repeat="event in events">
 
 						 	<!-- <div ng-click="go('#/tab/event/{{event.id}}'')"> -->
-						 	<div id='eventWrapper' ng-click="go_here(event.id)" >
+						 	<div id='eventWrapper' ng-click="go_here(event.id,events)" >
 						    <img class="full-image" src="{{event.cover}}">
 				 				<h3>{{event.name}}</h3>
 				        <p>{{event.location}}</p>

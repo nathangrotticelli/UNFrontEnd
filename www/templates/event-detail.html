@@ -5,13 +5,15 @@
   The Pets service returns an array of pet data
 -->
 <ion-view>
+
 	  <ion-content class='expandedEvent' has-header="false" padding="false">
-	  <a id='eventLink'class="topBtn" href="#/tab/events">
-	   <i class="icon ion-android-storage"> All Events</i>
+	  <p>
+	  <a id='eventLink'class="topBtn" href="#/tab/events" animation="slide-right-left-ios7">
+	   <i class="icon ion-android-system-back"></i>
 	 	</a>
-	  <a id="shareBtn" class="topBtn" ng-click='show()'>
-	      <i class="icon ion-share"> Share</i>
-	 	</a>
+	  <a id="shareBtnId" ng-click="shareBtn('Check this event from the U Nightlife App!', singleEvent.name, singleEvent.cover, singleEvent.location)" class="topBtn">
+	      <i class="icon ion-share"></i>
+	 	</a></p>
 	  		<div id='singleEventContent'>
 	    		<img src="{{singleEvent.cover}}">
 	    		<br>
@@ -20,21 +22,21 @@
 	    		<p>{{ singleEvent.name }}</p>
 	    		<div class="list card">
 						  <div class="item item-divider item-icon-left">
-						  	<i class="icon ion-home"></i>
+						  	<i class="icon ion-clipboard"></i>
 						    Event Description:
 						  </div>
 
 						  <div class="item item-text-wrap">
-						  	<i class="icon ion-home"></i>
-						    {{ pageBreak(singleEvent.description) }}
+
+						    {{ singleEvent.description}}
 						  </div>
 
-					  	<div class="item item-icon-left">
-			    			<i class="icon ion-home"></i>
+					  	<div class="item item-icon-left item-divider">
+			    			<i class="icon ion-ios7-location"></i>
 			    			{{ singleEvent.location }}</div>
 
-			    		<div class="item item-icon-left">
-			    			<i class="icon ion-home"></i>
+			    		<div class="item item-icon-left item-divider">
+			    			<i class="icon ion-android-clock"></i>
 			    			{{ singleEvent.start_time }}</div>
 					</div>
 

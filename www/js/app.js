@@ -47,8 +47,18 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
     .state('tab.adopt', {
       url: '/adopt',
       views: {
-        'adopt-tab': {
+        'events-tab': {
           templateUrl: 'templates/adopt.html',
+          controller: 'PetIndexCtrl'
+        }
+      }
+    })
+
+	.state('tab.addAnEvent', {
+      url: '/addAnEvent',
+      views: {
+        'events-tab': {
+          templateUrl: 'templates/addAnEvent.html',
           controller: 'PetIndexCtrl'
         }
       }
@@ -57,8 +67,9 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
     .state('tab.about', {
       url: '/about',
       views: {
-        'about-tab': {
-          templateUrl: 'templates/about.html'
+        'events-tab': {
+          templateUrl: 'templates/about.html',
+          controller: 'PetIndexCtrl'
         }
       }
     });
@@ -70,6 +81,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
 .run(function() {
   ionic.Platform.ready(function() {
     StatusBar.hide();
+    // StatusBar.backgroundColorByName("red");
   });
 });
 

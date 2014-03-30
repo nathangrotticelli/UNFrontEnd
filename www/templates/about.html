@@ -1,33 +1,36 @@
 <!--
-  This template loads for the 'tab.about' state (app.js)
+  This template loads for the 'tab.adopt' state (app.js)
 -->
-<ion-view title="About Ionic">
-  <ion-content has-header="true" has-tabs="true" padding="true">
-    <img src="img/ionic.png" class="ionic-logo">
-    <p>
-      This is a sample seed project for the Ionic Framework. Please cut it up and make it your own.
-      Check out the <a href="http://ionicframework.com/docs/" target="_blank">docs</a>
-      for more info.
-    </p>
-    <p>
-      Questions? Hit up the 
-      <a href="http://forum.ionicframework.com/" target="_blank">forum</a>.
-    </p>
-    <p>
-      Find a bug? Create an 
-      <a href="https://github.com/driftyco/ionic/issues?state=open" target="_blank">issue</a>.
-    </p>
-    <p>
-      What to help improve Ionic?
-      <a href="http://ionicframework.com/contribute/" target="_blank">Contribute</a>.
-    </p>
-    <p>
-      Stay up-to-date with the Ionic 
-      <a href="http://ionicframework.com/subscribe/" target="_blank">newsletter</a> and 
-      <a href="https://twitter.com/Ionicframework" target="_blank">twitter</a> account.
-    </p>
-    <p>
-      MIT Licensed. Happy coding.
-    </p>
+<ion-view>
+  <ion-content animation="my-animate" class='adoptBack' scroll="false" has-header="false" has-tabs="false">
+
+  <div class='aboutPage'>
+	 	<a id="unMenu3" class="button button-clear button-icon icon ion-android-system-back" href="#/tab/adopt"></a>
+<button id="unMenu" class="button button-clear button-icon icon ion-navicon" ng-click="open_menu()"></button>
+<br><br>
+
+
+   <div class="card">
+  <div class="item item-divider">
+    Why is this app so awesome?
+  </div>
+  <div class="item item-text-wrap">
+    This apps awesomeness stems from you and your college, so give your self a big ol' pat on the back.
+  </div>
+  <div class="item item-divider">
+    Can anyone get into the app?
+  </div>
+  <div class="item item-text-wrap">
+    Nope, the app is smart enough to know whether you are a student or not. We believe in a space for student eyes only.
+  </div>
+  <div class="item item-divider">
+    A Third Interesting Question?
+  </div>
+  <div class="item item-text-wrap">
+    Another exquisitely informative, yet deeply engaging answer.
+  </div>
+
+	</div>
+    </div>
   </ion-content>
 </ion-view>

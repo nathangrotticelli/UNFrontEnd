@@ -1,21 +1,26 @@
 <!--
   This template loads for the 'tab.adopt' state (app.js)
 -->
-<ion-view title="Help">
-  <ion-content has-header="true" has-tabs="true">
-    <h3>Emergency? Or just curious?</h3>
-    <p>We're here for you, so please reach out!</p>
-    <div class="list list-inset">
-      <label class="item item-input">
-        <span class="input-label">Your name</span>
-        <input type="text">
-      </label>
-      <label class="item item-input">
-        <span class="input-label">Your email</span>
-        <input type="email">
-      </label>
-      <ion-toggle>Drop us a Note.</ion-toggle>
-      <button class="button button-positive button-block">Word.</button>
+<ion-view>
+  <ion-content animation="my-animate" class='adoptBack' scroll="false" has-header="false" has-tabs="false">
+  <div>
+
+      <button id="unMenu" class="button button-clear button-icon icon ion-navicon" ng-click="open_menu()"></button>
+
+   <i id='adoptPic' class="icon ion-android-hand"></i>
+    <h3 id='adoptHead'>S.O.S. Or Just Curious?</h3>
+    <h4 id='adoptSub'>Don't hesitate to reach out.</h4>
+    <br><br>
+    <a href="#/tab/about" class="adoptBtn button button-positive">
+  				F.A.Q.
+		</a>
+    <a href="mailto:UNRepTeam@gmail.com?subject=It's good to talk&body=Hi," class="adoptBtn button button-stable">
+  				Email Us
+		</a>
+				<p></p>
+		<!-- <button class="adoptBtnLong button button-stable">
+			Frequently Asked Questions
+		</button> -->
     </div>
   </ion-content>
 </ion-view>

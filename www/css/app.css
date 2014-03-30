@@ -15,6 +15,18 @@
 	bottom: 4px;
 }*/
 
+.aboutPage{
+	top:0px;
+}
+
+.card .item-divider{
+	font-style: bold;
+	background-color: beige;
+}
+.card .item-text-wrap{
+	background-color: white;
+}
+
 /*#cardID{
 	padding-left: 42px;
 	padding-right: 42px;
@@ -38,13 +50,13 @@ html {
 /*border-image-source: url("../images/shadowEvents.png");*/
 #wholeEventsPage{
 	/*margin-top: 3px;*/
-	padding-top:7.68px;
+	padding-top:30.725px;
 	background-color: gray;
 	top:0px;
 		background-image: url("../images/transBackground.png");
 		z-index: .1;
 		background-size: cover;
-		background-position: auto auto;
+		background-position: center;
 		/*top: 20px;*/
 	/*	border-style: solid;
 		border-top: thick double transparent;*/
@@ -64,13 +76,13 @@ html {
 	 position:fixed;
 	 background-image: url("../images/UNLogoApp.png");
 	 background-repeat: no-repeat;
-	 background-size: 83% 45%;
+	 background-size: 90.9397% 45%;
 	 background-position: center;
 	 height: 50%;
 	 width: 100%;
 	 /*width: 100%;*/
 	 /*height:  50%;*/
-	 top: 3.2%;
+	 top: -41.2px;
 	/* padding-top: 4%;*/
 	 z-index: 20;
 	 max-width:100%;
@@ -117,6 +129,49 @@ html {
 #eventWrapper h3{
 	color:white;
 	font-style: italic;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	font-family: 'Gafata', sans-serif;
+}
+
+#adoptHead{
+	color:white;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	font-family: 'Gafata', sans-serif;
+	text-align: center;
+}
+
+#adoptSub{
+	color:white;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	font-family: 'Gafata', sans-serif;
+	text-align: center;
+}
+
+.submitBtn{
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+#adoptPic{
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-top: 15%;
+	font-size: 180px;
+	color:white;
+
+}
+
+#adoptPic2{
+	margin: auto;
+	padding-left: 28%;
+	padding-right: 25%;
+	padding-top: 15%;
+	font-size: 180px;
+	color:white;
+
 }
 
 #eventWrapper p{
@@ -132,12 +187,12 @@ html {
 	margin: auto;
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-bottom: 10px;
+	padding-bottom: 95px;
 /*	padding-top: 15px;*/
-	height: 480px;
+	height: 568px;
 	width: 100%;
 	text-align: center;
-	padding-top: 40%;
+	padding-top: 25%;
 	overflow: auto;
 	overflow-scrolling: auto;
 	-webkit-overflow-scrolling: touch;
@@ -145,6 +200,10 @@ html {
 	/*position: absolute;*/
 
 }
+
+/*#eventList #eventWrapper:last-child {
+	padding-bottom: 8%;
+}*/
 
 
 #wholeEventsPage .item-body{
@@ -196,15 +255,51 @@ html {
   background-color: #000;
 }
 
+.front{
+	z-index: 999;
+}
+
 #unMenu{
 	float: left;
 	z-index: 999;
 	height:0;
 	width:5%;
+	padding-right: 7%;
 	padding-left: 7%;
-	padding-top: 4.5%;
+	padding-top: 3.5%;
 	max-width: 8%;
-	color: transparent;
+	color: black;
+	position: absolute;
+	right:5%;
+}
+
+#unMenu3{
+	float: left;
+	z-index: 999;
+	height:0;
+	width:5%;
+	padding-right: 7%;
+	padding-left: 7%;
+	padding-top: 3.5%;
+	max-width: 8%;
+	color: black;
+	position: absolute;
+	left:0px;
+}
+
+#unMenu2{
+	float: left;
+	z-index: 999;
+	height:0;
+	width:5%;
+	top:3%;
+	padding-right: 7%;
+	padding-left: 7%;
+	padding-top: 1%;
+	max-width: 8%;
+	color: white;
+	position: absolute;
+	right:6.5%;
 }
 
 .full-image {
@@ -289,9 +384,31 @@ button{
 /*
 		height: 100%;*/
 }
+.adoptBack{
+	background-color: gray;
+	background-image: url("../images/outsideMesh.png");
+	background-size: cover;
+
+	background-position: auto auto;
+}
+
+.adoptBtn{
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.adoptBtnLong{
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 90%;
+	margin-left: 5%;
+	font-family: 'Gafata', sans-serif;
+}
+
 
 .expandedEvent .topBtn{
-	font-size: 14px;
+	font-size: 23px;
 	color: black;
 	text-align: center;
 	vertical-align: center;
@@ -300,7 +417,7 @@ button{
 	border-top: thick double;
 	border-left: thick double;
 	border-right: thick double;
-	border-bottom: 0px;
+	/*border-bottom: 0px;*/
 	border-color: transparent;
 
 	/*padding-left: 5%;
@@ -331,22 +448,31 @@ button{
 .expandedEvent p{
 	font-size: 20px;
 	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: bold;
 }
 
+.expandedEvent .item-text-wrap{
+	font-size: 11px;
+font-family: 'Gafata', sans-serif;}
 
 #singleEventContent{
 	margin: auto;
 	margin-top: 0px;
 /*	padding-left: 30px;
 	padding-right: 30px;*/
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	margin-bottom: -29px;
 /*	padding-top: 15px;*/
-	height: 480px;
+	height: 568px;
 	width: 100%;
 
 	/*text-align: center;*/
 }
 
+.leftShift{
+	float: left;
+}
 
 
 #singleEventContent img{
@@ -367,7 +493,7 @@ button{
 	font-size: 15px
 }*/
 
-#shareBtn{
+#shareBtnId{
 	float: right;
 	/*font-size: 5px;*/
 	/*right:10px;*/
@@ -379,5 +505,23 @@ button{
 	max-width: 60px;*/
 }
 
+.my-animate .ng-enter,
+.my-animate .ng-leave {
+  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  position: relative;
+  display: block;
+}
+.my-animate .ng-enter.ng-enter-active,
+.my-animate .ng-leave {
+  opacity: 1;
+  top: 0;
+  height: 30px;
+}
+.my-animate .ng-leave.ng-leave-active,
+.my-animate .ng-enter {
+  opacity: 0;
+  top: -50px;
+  height: 0px;
+}
 
 /*<link href="css/ionicons.css" rel="stylesheet" type="text/css" media="screen" />*/
