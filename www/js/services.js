@@ -86,7 +86,7 @@ angular.module('starter.services', [])
      longitude: 'Longitude: undefined',
      latitude: 'Latitude: undefined' },
    { description: 'CU Entertainment , Power n Soul Pro., and The HighDive \n\nPRESENTS:\n\n********DE NOCHE**HighDive********\n********Two Dance floors********\n\nCome out and join Dance2XS UIUC and Dance2XS Caliente for Little Urb: The Urbanite Preview and Party! Guests can mingle with the dancers and get a small look of what we will be bringing to URBANITE XVII CHICAGO this April 26th! If you can\'t wait for Urbanite, Little Urb is the place to be!\n\nPERFORMANCES BY:\nDance 2XS UIUC\nDance 2XS Caliente \nDance 2XS Purdue\nThe RainDodgers\n\nPARTY CONTINUES:\nDJs play before, during and after the showcase!!\n\nHOSTED BY:\nMichael Henry\n\nWHEN: Saturday, March 15th\nTIME: Doors at 9pm\nWHERE: The HighDive \nCOST: $5 Pre-sale, $7 at the Door! \nFor tickets, contact your favorite 2XS member!! \n\nSPECIALS:\n$5 Long Islands\n$3 Corona, Modelo Especial, Negra Modelo, Dos Equis\n\nAnd be sure the check out the Workshop with Austin Lim on Sunday, March 16th! Details below.\nhttps://www.facebook.com/events/600434050051468/',
-     cover: 'https://scontent-a.xx.fbcdn.net/hphotos-prn2/t1.0-9/1975003_745264972159137_31835349_n.jpg',
+     cover: 'https://scontent-a-iad.xx.fbcdn.net/hphotos-frc1/t1.0-9/1969296_753551201330514_1622454855_n.jpg',
      privacy: 'OPEN',
      start_time: '10:30pm, April 6th, 2014',
      location: 'Champaign, Illinois',
@@ -95,8 +95,29 @@ angular.module('starter.services', [])
      id: '187994541410547',
      attending: { data: [Object], paging: [Object] },
      longitude: 'Longitude: undefined',
-     latitude: 'Latitude: undefined' }
-  ];
+     latitude: 'Latitude: undefined' },
+     { description: 'So you missed Ultra last weekend? No worries. Come down to the Chi Phi Castle this Saturday to throw down at our first annual Ultra party. With the best sound system and the craziest light setup this school has to offer, theres no better place to start off your Saturday night. LIGHTS \n FOAM \n BUBBLES doors open at 10pm. BU ID Required',
+     cover: 'https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/10013351_10203615460173411_669052860_n.jpg',
+     privacy: 'OPEN',
+     start_time: '10:30pm, April 6th, 2014',
+     location: '144 Washington St',
+     name: 'Chi Phi Presents: Ultra',
+     venue: { name: 'Binghamton, New York' },
+     id: '187994541410548',
+     attending: { data: [Object], paging: [Object] },
+     longitude: 'Longitude: undefined',
+     latitude: 'Latitude: undefined' },
+     {description: 'Come jam out with Long Island indie-rock sensation NGHBRS and local favorites Lila Ignite as we raise money for the American Diabetes Assosciation! Tickets: $5, all proceeds go to charity.',
+     cover: 'https://scontent-b-iad.xx.fbcdn.net/hphotos-frc1/t1.0-9/10171160_303848106433831_1748521373_n.jpg',
+     privacy: 'OPEN',
+     start_time: '10:30pm, April 24th, 2014',
+     location: 'Binghamton University Mandela Room',
+     name: 'NGHBRS at Binghamton University',
+     venue: { name: 'Binghamton, New York' },
+     id: '187994541410549',
+     attending: { data: [Object], paging: [Object] },
+     longitude: 'Longitude: undefined',
+     latitude: 'Latitude: undefined' } ];
 
   return {
     all: function() {

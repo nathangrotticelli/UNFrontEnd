@@ -13,6 +13,13 @@ angular.module('starter.controllers', ['ionic'])
   $scope.open_menu = function(){
    		$scope.sideMenuController.toggleRight();
 	};
+
+// $scope.goTo = function(page) {
+//             console.log('Going to ' + page);
+//             $scope.sideMenuController.toggleLeft();
+//             $location.url('/' + page);
+//         };
+
 	$scope.go_here = function (eventId) {
 
 		$state.go("tab.event-detail", {eventId: eventId });

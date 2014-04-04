@@ -6,9 +6,9 @@
 
 <!-- title="{{myTitle}}" -->
 <!-- <ion-view  title='Event Info'> -->
-<ion-view>
+<ion-view animation="slide-left-right-ios7">
 
-  <ion-content scroll="false" has-header="false" has-tabs="false">
+  <ion-content scroll="false" has-header="false" has-tabs="false" animation="slide-left-right-ios7">
 
 
 <!-- <div id='shadow'> -->
@@ -59,7 +59,7 @@
 	 				<div ng-repeat="event in events">
 
 						 	<!-- <div ng-click="go('#/tab/event/{{event.id}}'')"> -->
-						 	<div id='eventWrapper' ng-click="go_here(event.id,events)" >
+						 	<div id='eventWrapper' ng-click="go_here(event.id,events)"  animation="slide-left-right-ios7">
 						    <img class="full-image" src="{{event.cover}}">
 				 				<h3>{{event.name}}</h3>
 				        <p>{{event.location}}</p>

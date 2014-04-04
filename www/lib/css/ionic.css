@@ -5626,18 +5626,18 @@ a.button {
   transition: all ease-in-out 250ms; }
 
 .fade-in {
-  -webkit-animation: fadeOut 0.3s;
-  -moz-animation: fadeOut 0.3s;
-  animation: fadeOut 0.3s; }
+  -webkit-animation: fadeOut 0.8s;
+  -moz-animation: fadeOut 0.8s;
+  animation: fadeOut 0.8s; }
   .fade-in.active {
-    -webkit-animation: fadeIn 0.3s;
-    -moz-animation: fadeIn 0.3s;
-    animation: fadeIn 0.3s; }
+    -webkit-animation: fadeIn 0.8s;
+    -moz-animation: fadeIn 0.8s;
+    animation: fadeIn 0.8s; }
 
 .fade-in-not-out.ng-enter, .fade-in-not-out .ng-enter {
-  -webkit-animation: fadeIn 0.3s;
-  -moz-animation: fadeIn 0.3s;
-  animation: fadeIn 0.3s;
+  -webkit-animation: fadeIn 0.8s;
+  -moz-animation: fadeIn 0.8s;
+  animation: fadeIn 0.8s;
   position: relative; }
 .fade-in-not-out.ng-leave, .fade-in-not-out .ng-leave {
   display: none; }

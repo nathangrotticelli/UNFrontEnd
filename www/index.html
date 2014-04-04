@@ -16,6 +16,10 @@
 
 <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
 
+<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+
     <!-- your app's css -->
     <link href="./css/app.css" rel="stylesheet">
 
@@ -39,7 +43,7 @@
   <!--
     'starter' is the name of this angular module (js/app.js)
   -->
-  <body ng-app="starter" animation="slide-right-left-ios7">
+  <body ng-app="starter" animation="fade-in">
 
     <!--
       The nav bar that will be updated as we navigate between views
@@ -69,7 +73,7 @@
 	<ion-pane ion-side-menu-content id="nav-menu-pane">
 
 		<!-- <ion-nav-bar type="bar-stable" hide-back-button="false" animation="nav-title-slide-ios7"></ion-nav-bar> -->
-    <ion-nav-view></ion-nav-view animation="slide-right-left-ios7">
+    <ion-nav-view></ion-nav-view animation="fade-in">
 
 		</ion-pane>
 
@@ -78,14 +82,14 @@
 <div class="list">
 
  <!-- ng-click="open_menu()" -->
-  <a class="item item-icon-left" href="#/tab/events">
+  <a class="item item-icon-left" href="#/tab/events" ng-click="sideMenuController.toggleRight()">
 
 
     <i class="icon ion-beer"></i>
     Events
   </a>
 
-  <a class="item item-icon-left" href="#/tab/addAnEvent">
+  <a class="item item-icon-left" href="#/tab/addAnEvent" ng-click="sideMenuController.toggleRight()">
 
     Add an Event
     <i class="icon ion-upload"></i>
@@ -93,10 +97,18 @@
 
 <!-- ng-click="go_here2(/tab/adopt)" -->
 
-  <a class="item item-icon-left" ion-nav-animation="slide-right-left-ios7" href="#/tab/adopt">
+  <a class="item item-icon-left" ion-nav-animation="fade-in" href="#/tab/adopt" ng-click="sideMenuController.toggleRight()">
 
     Help
-    <i class="icon ion-ios7-help"></i>
+    <i class="icon ion-help"></i>
+    <!-- <span class="item-note">
+    </span> -->
+  </a>
+
+  <a class="item item-icon-left" ion-nav-animation="fade-in" href="#/tab/school-index" ng-click="sideMenuController.toggleRight()">
+
+    Log Out
+    <i class="icon ion-arrow-swap"></i>
     <!-- <span class="item-note">
     </span> -->
   </a>
